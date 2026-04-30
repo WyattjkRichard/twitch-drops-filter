@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Twitch Drops Filter",
+  "version": "1.0",
+  "description": "Filter unwanted games from Twitch Drops page",
+  "permissions": ["storage", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.twitch.tv/drops/campaigns"],
+      "js": ["storage-helpers.js", "content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

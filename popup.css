@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, sans-serif;
+  width: 250px;
+  padding: 10px;
+}
+
+input {
+  width: calc(100% - 20px);
+  padding: 5px;
+  margin-top: 5px;
+}
+
+button {
+  margin-top: 5px;
+  padding: 5px;
+}
+
+li {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between; /* title left, button right */
+  align-items: center;
+}
